@@ -15,7 +15,7 @@ class HomePage extends GetView<LocalController> {
   Future<dynamic> getdata() async {
   //print("Accessing get data");
   var response = await crud.postData(
-    'https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=Wr69IHoBns3kF4AvHxhlakp4ZFITERMu'
+    'https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key= '
   );
   //print("response is #################################################$response");
   return response.fold((l) => l, (r) => r);
